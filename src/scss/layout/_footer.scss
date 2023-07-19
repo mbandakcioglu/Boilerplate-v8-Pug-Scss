@@ -1,0 +1,30 @@
+footer {
+	-webkit-box-shadow: inset 5px 0 0 0 $c-red;
+	-moz-box-shadow: inset 5px 0 0 0 $c-red;
+	box-shadow: inset 5px 0 0 0 $c-red;
+	.container {
+		max-width: $headerFooterWidth;
+	}
+	nav {
+		font-size: 12px;
+		ul {
+			display: flex;
+			list-style: none;
+			padding-left: 0;
+			li {
+				&:not(:last-child){
+					margin-right: 60px;
+				}
+				a {
+					color: $c-black;
+					&:hover {
+						color: $c-red;
+					}
+				}
+			}
+		}
+	}
+	p {
+		font-size: 10px;
+	}
+}

@@ -1,0 +1,59 @@
+$background-color_1: #000;
+
+.kdz-accordion {
+	width: 100%;
+	.kdz-accItem {
+		border: 1px solid #000;
+		margin-bottom: 5px;
+		width: 100%;
+		.kdz-accHead {
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+			padding: 5px 15px;
+			.plus {
+				align-items: center;
+				height: 20px;
+				display: flex;
+				justify-content: center;
+				position: relative;
+				transition: 0.3s;
+				width: 20px;
+				&::before {
+					background-color: $background-color_1;
+					content: "";
+					display: block;
+					height: 1px;
+					position: absolute;
+					transform: rotate(-90deg);
+					transition: 0.3s;
+					width: 80%;
+				}
+				&::after {
+					background-color: $background-color_1;
+					content: "";
+					display: block;
+					height: 1px;
+					position: absolute;
+					transition: 0.3s;
+					width: 80%;
+				}
+			}
+		}
+		.kdz-accPane {
+			display: none;
+			padding: 15px;
+		}
+		&.active {
+			.kdz-accHead {
+				.plus {
+					&::before {
+						transform: rotate(0);
+						-webkit-transform: rotate(0);
+					}
+				}
+			}
+
+		}
+	}
+}

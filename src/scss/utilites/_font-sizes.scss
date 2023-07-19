@@ -1,0 +1,39 @@
+.f {
+	@for $i from 12 through 25 {
+		&-#{$i} {
+			font-size: toRem($i) !important;
+			// @include media-breakpoint-down(lg) {
+			// 	font-size: toRem(#{$i} * 0.75);
+			// }
+		}
+	}
+
+	&-32 {
+		font-size: toRem(32) !important;
+		// @include media-breakpoint-down(lg) {
+		// 	font-size: 24px;
+		// }
+	}
+	&-36 {
+		font-size: toRem(36) !important;
+		// @include media-breakpoint-down(lg) {
+		// 	font-size: 24px;
+		// }
+	}
+	&-48 {
+		font-size: toRem(48) !important;
+		// @include media-breakpoint-down(lg) {
+		// 	font-size: 26px;
+		// }
+	}
+	&-58 {
+		font-size: toRem(58) !important;
+		// @include media-breakpoint-down(lg) {
+		// 	font-size: 26px;
+		// }
+	}
+	&-semibold {
+		font-weight: 600;
+	}
+}
+

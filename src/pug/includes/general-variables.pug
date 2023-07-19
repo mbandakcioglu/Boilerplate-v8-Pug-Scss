@@ -1,0 +1,25 @@
+//- -var assets = "/assets"
+//- -var images = assets + "/images"
+//- -var docs = assets + "/docs"
+
+- var drupal = "false";
+
+if drupal === "true"
+	-var themes = "/themes/custom/bartik"
+	-var site = "/sites/default/files"
+
+	-var css = themes + "/styles"
+	-var js = themes + "/scripts"
+	-var images = site + "/images"
+	-var docs = assets + "/docs"
+	-var icons = images + "/icons"
+	-var videos = assets + "/videos"
+else
+	-var assets = "/assets"
+	
+	-var css = assets + "/styles"
+	-var js = assets + "/scripts"
+	-var images = assets + "/images"
+	-var docs = assets + "/docs"
+	-var icons = images + "/icons"
+	-var videos = assets + "/videos"

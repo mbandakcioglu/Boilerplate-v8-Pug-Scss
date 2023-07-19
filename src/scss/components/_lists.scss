@@ -1,0 +1,19 @@
+.red-dot-list {
+	&, ul {
+
+		list-style: none;
+	}
+	li {
+		margin-bottom: 20px;
+		&:before {
+			background-color: red;
+			border-radius: 50%;
+			content: "";
+			display: inline-block;
+			height: 12px;
+			margin-left: -24px;
+			margin-right: 12px;
+			width: 12px;
+		}
+	}
+}

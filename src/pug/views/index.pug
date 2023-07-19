@@ -1,0 +1,110 @@
+//- page-a.pug
+
+extends ../templates/layout.pug
+
+block variables
+	-var title = "Home"
+	-var desc = "Home Page"
+	-var keywords = "Home,Page"
+	-var pageRole = "home"
+
+
+block header 
+	include ../includes/header.pug
+
+
+block content
+	section#hero
+		.container
+			.row
+				.col-md-12
+					h1 Welcome to Rareaware portal.
+					summary Choose the drug and click to learn more.
+	section 
+		.container 
+			.row 
+				.col-12 
+					.single-item.lightgallery
+						div
+							img(src="https://picsum.photos/id/1014/1536/1354")
+						div
+							img(src="https://picsum.photos/id/1018/1536/1354")
+						div
+							img(src="https://picsum.photos/id/1025/1536/1354")
+						div
+							img(src="https://picsum.photos/id/1014/1536/1354")
+						div
+							img(src="https://picsum.photos/id/1018/1536/1354")
+						div
+							img(src="https://picsum.photos/id/1025/1536/1354")
+
+	section 
+		.container 
+			.row 
+				.col-12 
+					p Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, illo #[a(href="./sub/main") laudantium] vel repellendus dicta dolores at quis pariatur voluptatum earum veniam, repudiandae error, ad hic facilis illum explicabo ea deleniti.
+	section 
+		.container 
+			.row 
+				.col-12 
+					.kdz-accordion(data-closed-other="yes", data-first-open="no")
+						.kdz-accItem
+							.kdz-accHead
+								span Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								span.plus
+							.kdz-accPane
+								p
+									| Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt assumenda consequuntur dignissimos dolor! Ab illum molestias fugit earum minus magnam esse eligendi sequi! Pariatur possimus atque architecto voluptate soluta eveniet.
+						.kdz-accItem
+							.kdz-accHead
+								span Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, soluta voluptas nisi ea saepe temporibus itaque? 
+								span.plus
+							.kdz-accPane
+								p
+									| Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus illum necessitatibus nostrum fugit explicabo! Necessitatibus dignissimos incidunt velit maxime, fugiat delectus perspiciatis libero blanditiis laboriosam voluptatibus id. Eos, quaerat expedita!
+		.container 
+			.row
+				.col-12 
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+					p #[a(href="#") #[u lorem]] ipsum dolor sit amet
+					p lorem ipsum dolor sit amet
+block scripts
+	script. 
+		//- alert();

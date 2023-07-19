@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+Disallow: /devremulk/2+1
