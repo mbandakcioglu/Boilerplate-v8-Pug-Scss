@@ -12,24 +12,31 @@ Terminal (windows cms veya powershell) kullanarak gerekli paketleri yükleyin
 
 ## Settings
 
-### **Projelerin Drupal ortamına uygun klasör yapısı olması için yapılması gerekenler**
+### **Klasör Yapısı Seçimi**
+1. 
+	- gulpfile.js dosyasında settings.buildType değişken değeri seçilmeli: *Drupal, Wordpress, Html*
 
-gulpfile.js dosyasında settings.drupal değiştenini true yapılmalı
+	- Wordpress seçiminde Tema adı girilmeli
+		```javascript
+			const settings = {
+				urlBuild: true,
+				htmlMinifying: true,
+				portNo: 3099,
+				drupal: "Html,
+				wpThemeName: "TestTheme"
+			}
+		```
 
-```javascript
-	const settings = {
-		urlBuild: true,
-		htmlMinifying: true,
-		portNo: 3099,
-		drupal: true,
-	}
-```
+	
+1. 
+	- src > pug > includes > general-variables.pug dosyasında *buildType* değişken değeri seçilmeli: *Drupal, Wordpress, Html*
+	- Wordpress seçiminde Tema adı girilmeli
 
-src > pug > includes > general-variables.pug dosyasında - var drupal değeri "true" yapılmalı
 
-```pug
-	- var drupal = "true";
-```
+		```bash
+			- var buildType = "Html";
+			- var wpThemeName = "TestTheme"
+		```
 
 ## Tasks
 
@@ -69,7 +76,7 @@ Görselleri her kayıt sonrasın watch taski ile tekrar tekrar derlenmesini enge
 
 customJsTransfer task'ında /dist dizinine taşınmasını istediğiniz js/json dosyalarının yanımlamasın yapıp, default ve build altında bu task'ı yorum satırı olmaktan çıkartın.
 
-```bash
+```javascript
 	async function customJsTransfer() {
 		return src(
 				[

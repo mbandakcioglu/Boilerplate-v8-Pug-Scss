@@ -31,21 +31,22 @@ import gulpIf from 'gulp-if';
 import { deleteAsync } from 'del';
 
 // variables
-const
-	locals = {}
+const locals = {},	
+	settings = {
+		urlBuild: true,
+		htmlMinifying: true,
+		portNo: 3099,
+		buildType: "Wordpress", // Drupal, Wordpress, Html
+		wpThemeName: "mbtheme"
+	}
 
-const settings = {
-	urlBuild: true,
-	htmlMinifying: true,
-	portNo: 3099,
-	drupal: false
-}
-
-const {urlBuild, htmlMinifying, portNo, drupal} = settings;
+const {urlBuild, htmlMinifying, portNo, buildType, wpThemeName} = settings;
 
 let themeDest, filesDest = "";
 
-if (drupal) {
+if(buildType === "Wordpress") {
+	themeDest = filesDest = `/wp-content/themes/${wpThemeName}`;
+} else if (buildType === "Drupal") {
 	themeDest = "/themes/custom/bartik/";
 	filesDest = "/sites/default/files/";
 } else {
