@@ -1,4 +1,5 @@
 # Boilerplate
+Wordpress, Drupal ortamlarını da destekleyen HTML boilerplate.
 
 ## Bilgisayarınızda Çalıştırın
 
