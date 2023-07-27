@@ -35,7 +35,7 @@ Terminal (windows cms veya powershell) kullanarak gerekli paketleri yükleyin
 
 
 		```bash
-			- var buildType = "Html";
+			- var buildType = "Wordpress";
 			- var wpThemeName = "TestTheme"
 		```
 
