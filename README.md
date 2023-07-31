@@ -1,5 +1,4 @@
-# Boilerplate v8
-Wordpress, Drupal ortamlarını da destekleyen HTML boilerplate.
+# Boilerplate
 
 ## Bilgisayarınızda Çalıştırın
 
@@ -35,8 +34,8 @@ Terminal (windows cms veya powershell) kullanarak gerekli paketleri yükleyin
 
 
 		```bash
-			- var buildType = "Wordpress";
-			- var themeName = "TestTheme"
+			- var buildType = "Html";
+			- var wpThemeName = "TestTheme"
 		```
 
 ## Tasks
