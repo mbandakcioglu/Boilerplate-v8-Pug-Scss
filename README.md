@@ -1,4 +1,5 @@
-# Boilerplate
+# Boilerplate v8
+Wordpress, Drupal ortamlarını da destekleyen HTML boilerplate.
 
 ## Bilgisayarınızda Çalıştırın
 
@@ -16,26 +17,26 @@ Terminal (windows cms veya powershell) kullanarak gerekli paketleri yükleyin
 1. 
 	- gulpfile.js dosyasında settings.buildType değişken değeri seçilmeli: *Drupal, Wordpress, Html*
 
-	- Wordpress seçiminde Tema adı girilmeli
+	-  Wordpress ve Drupal  seçiminde Tema adı girilmeli
 		```javascript
 			const settings = {
 				urlBuild: true,
 				htmlMinifying: true,
 				portNo: 3099,
 				drupal: "Html,
-				wpThemeName: "TestTheme"
+				themeName: "TestTheme"
 			}
 		```
 
 	
 1. 
 	- src > pug > includes > general-variables.pug dosyasında *buildType* değişken değeri seçilmeli: *Drupal, Wordpress, Html*
-	- Wordpress seçiminde Tema adı girilmeli
+	- Wordpress ve Drupal seçiminde Tema adı girilmeli
 
 
 		```bash
-			- var buildType = "Html";
-			- var wpThemeName = "TestTheme"
+			- var buildType = "Wordpress";
+			- var themeName = "TestTheme"
 		```
 
 ## Tasks

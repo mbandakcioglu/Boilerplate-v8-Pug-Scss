@@ -2,12 +2,12 @@
 //- -var images = assets + "/images"
 //- -var docs = assets + "/docs"
 
-- var buildType = "Wordpress";  // Drupal, Wordpress, Html
-- var wpThemeName = "mbtheme"
+- var buildType = "Drupal";  // Drupal, Wordpress, Html
+- var themeName = "mbtheme"
 
 
 if buildType === "Wordpress"
-	-var assets = "/wp-content/themes/" + wpThemeName
+	-var assets = "/wp-content/themes/" + themeName
 
 	-var css = assets + "/styles"
 	-var js = assets + "/scripts"
@@ -17,7 +17,7 @@ if buildType === "Wordpress"
 	-var videos = assets + "/videos"
 
 else if buildType === "Drupal"
-	-var themes = "/themes/custom/bartik"
+	-var themes = "/themes/custom/" + themeName
 	-var site = "/sites/default/files"
 
 	-var css = themes + "/styles"

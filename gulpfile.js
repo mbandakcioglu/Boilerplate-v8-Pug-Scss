@@ -36,18 +36,18 @@ const locals = {},
 		urlBuild: true,
 		htmlMinifying: true,
 		portNo: 3099,
-		buildType: "Wordpress", // Drupal, Wordpress, Html
-		wpThemeName: "mbtheme"
+		buildType: "Drupal", // Drupal, Wordpress, Html
+		themeName: "mbtheme" // Drupal, Wordpress 
 	}
 
-const {urlBuild, htmlMinifying, portNo, buildType, wpThemeName} = settings;
+const {urlBuild, htmlMinifying, portNo, buildType, themeName} = settings;
 
 let themeDest, filesDest = "";
 
 if(buildType === "Wordpress") {
-	themeDest = filesDest = `/wp-content/themes/${wpThemeName}`;
+	themeDest = filesDest = `/wp-content/themes/${themeName}`;
 } else if (buildType === "Drupal") {
-	themeDest = "/themes/custom/bartik/";
+	themeDest = `/themes/custom/${themeName}/`;
 	filesDest = "/sites/default/files/";
 } else {
 	themeDest = filesDest = "/assets/";
