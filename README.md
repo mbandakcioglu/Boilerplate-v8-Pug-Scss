@@ -22,19 +22,17 @@ Terminal (windows cms veya powershell) kullanarak gerekli paketleri yükleyin
 				urlBuild: true,
 				htmlMinifying: true,
 				portNo: 3099,
-				drupal: "Html,
+				buildType: "Drupal",
 				themeName: "TestTheme"
 			}
 		```
 
-	
 1. 
 	- src > pug > includes > general-variables.pug dosyasında *buildType* değişken değeri seçilmeli: *Drupal, Wordpress, Html*
 	- Wordpress ve Drupal seçiminde Tema adı girilmeli
 
-
 		```bash
-			- var buildType = "Html";
+			- var buildType = "Drupal";
 			- var wpThemeName = "TestTheme"
 		```
 
