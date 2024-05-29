@@ -36,7 +36,7 @@ const locals = {},
 		urlBuild: true,
 		htmlMinifying: true,
 		portNo: 3099,
-		buildType: "Drupal", // Drupal, Wordpress, Html
+		buildType: "Wordpress", // Drupal, Wordpress, Html
 		themeName: "mbtheme" // Drupal, Wordpress 
 	}
 

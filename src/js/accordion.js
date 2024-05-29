@@ -17,15 +17,17 @@ const kodzillaAccordion = () => {
 		const isActive = $this.hasClass("active")
 		const $panes = $(accPane, $this)
 		if (isActive) {
-			$this.removeClass("active")
-			$panes.stop().slideUp()
+			$this.removeClass("active");
+			$panes.stop().slideUp();
 		} else {
-			if (closedOthers) {
-				$(accItem).removeClass("active")
-				$(accPane).stop().slideUp()
-			}
-			$this.addClass("active")
-			$panes.stop().slideDown()
+
+			// $(".accItem.active").removeClass("active");
+			$(`${accItem}.active`).removeClass("active");
+			// $(".accItem.active").hide();
+			$($(`${accItem}.active`)).hide();
+
+			$this.addClass("active");
+			$panes.stop().slideDown();
 		}
 	})
 
